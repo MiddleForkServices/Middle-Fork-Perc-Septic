@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Fork Perc & Septic | Licensed Soil & Septic Testing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            900: '#1B3022', // Deep Forest Green
+                            800: '#2C4A34',
+                            700: '#3D6547',
+                            600: '#4F7F5A',
+                            100: '#EBF2ED',
+                            50: '#F4F7F5'
+                        },
+                        slateBrand: {
+                            900: '#1E293B',
+                            800: '#334155',
+                            600: '#475569',
+                            100: '#F1F5F9'
+                        },
+                        accent: {
+                            500: '#D97706', // Warm Amber/Gold
+                            600: '#B45309',
+                            50: '#FFFBEB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1B3022 0%, #2C4A34 50%, #1E293B 100%);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slateBrand-900 antialiased selection:bg-brand-700 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-200">
+        <!-- Top Bar Notice -->
+        <div class="bg-brand-900 text-slate-200 text-xs py-1.5 px-4 sm:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-shield-halved text-accent-500 mr-1.5"></i>Licensed Environmental Health Specialists</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-accent-500 mr-1.5"></i>Mon - Fri: 7:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Fast County Report Turnarounds</span>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-900 text-amber-500 flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-water"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-brand-900 block leading-none">MIDDLE FORK</span>
+                    <span class="text-[10px] font-bold text-slate-500 tracking-wider uppercase block mt-0.5">Perc & Septic Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <div class="hidden lg:flex items-center gap-8 font-medium text-slateBrand-800 text-sm">
+                <a href="#services" class="hover:text-brand-700 transition-colors">Services</a>
+                <a href="#estimator" class="hover:text-brand-700 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-calculator text-accent-500"></i> Cost Estimator
+                </a>
+                <a href="#process" class="hover:text-brand-700 transition-colors">How It Works</a>
+                <a href="#testimonials" class="hover:text-brand-700 transition-colors">Reviews</a>
+                <a href="#faq" class="hover:text-brand-700 transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-brand-700 transition-colors">Service Area</a>
+            </div>
+
+            <!-- CTA Phone & Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:5550192834" class="flex items-center gap-2 text-slateBrand-900 font-bold hover:text-brand-700 transition-colors text-sm px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-50">
+                    <i class="fa-solid fa-phone text-accent-500"></i>
+                    <span>(555) 019-2834</span>
+                </a>
+                <a href="#booking" class="bg-brand-900 hover:bg-brand-800 text-white font-semibold text-sm px-4 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+                    Get Free Estimate
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#services" class="block py-2 text-slate-800 font-medium hover:text-brand-700 border-b border-slate-100">Services</a>
+            <a href="#estimator" class="block py-2 text-slate-800 font-medium hover:text-brand-700 border-b border-slate-100"><i class="fa-solid fa-calculator text-accent-500 mr-2"></i>Cost Estimator</a>
+            <a href="#process" class="block py-2 text-slate-800 font-medium hover:text-brand-700 border-b border-slate-100">How Perc Testing Works</a>
+            <a href="#faq" class="block py-2 text-slate-800 font-medium hover:text-brand-700 border-b border-slate-100">Frequently Asked Questions</a>
+            <a href="#contact" class="block py-2 text-slate-800 font-medium hover:text-brand-700 border-b border-slate-100">Contact & Service Area</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:5550192834" class="w-full text-center py-2.5 rounded-xl border border-brand-900 text-brand-900 font-bold">
+                    <i class="fa-solid fa-phone text-accent-500 mr-2"></i>Call (555) 019-2834
+                </a>
+                <a href="#booking" class="w-full text-center py-2.5 rounded-xl bg-brand-900 text-white font-semibold shadow">
+                    Request Perc Test
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative gradient-bg text-white py-16 lg:py-24 overflow-hidden">
+        <!-- Subtle Pattern Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-800/80 border border-brand-600/50 rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium text-emerald-200">
+                        <i class="fa-solid fa-certificate text-amber-400"></i>
+                        <span>Middle Fork Certified Soil Scientists & Septic Designers</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight sm:leading-none">
+                        Fast, Reliable <span class="text-amber-400">Perc Testing</span> & Septic Site Evaluations
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal">
+                        Planning a build, land purchase, or septic replacement? Middle Fork Perc & Septic delivers certified soil percolation testing, profile pit inspections, and engineered designs for rapid county health permit approvals.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#estimator" class="w-full sm:w-auto accent-gradient hover:opacity-95 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl text-center transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Calculate Your Cost</span>
+                        </a>
+                        <a href="#booking" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-7 py-3.5 rounded-xl text-center backdrop-blur-sm transition-all">
+                            Book Field Site Visit
+                        </a>
+                    </div>
+
+                    <!-- Key Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-xl sm:text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400">County Compliant</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-xl sm:text-2xl font-bold text-amber-400">24-48 hr</p>
+                            <p class="text-xs text-slate-400">Report Turnaround</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-xl sm:text-2xl font-bold text-white">1,500+</p>
+                            <p class="text-xs text-slate-400">Sites Evaluated</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image/Card Overlay -->
+                <div class="lg:col-span-5 relative">
+                    <div class="bg-white text-slateBrand-900 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+                            <div>
+                                <h3 class="font-bold text-lg text-brand-900">Need a Quick Site Estimate?</h3>
+                                <p class="text-xs text-slate-500">Get an instant soil testing recommendation</p>
+                            </div>
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md">Guaranteed</span>
+                        </div>
+
+                        <!-- Hero Quick Checklist -->
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Full Soil Percolation Rates</h4>
+                                    <p class="text-xs text-slate-500">Standardized soak & hole measurements per local health code.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Deep Hole Soil Profiles</h4>
+                                    <p class="text-xs text-slate-500">Evaluating seasonal water tables, bedrock, and restrictive horizons.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-check text-xs"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Stamped Engineering Reports</h4>
+                                    <p class="text-xs text-slate-500">Official health department documentation ready for submission.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#estimator" class="block text-center w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3 rounded-xl transition shadow">
+                            Launch Price Estimator <i class="fa-solid fa-arrow-right text-xs ml-1.5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estimator" class="py-16 bg-white border-b border-slate-200 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-accent-600 font-bold text-xs uppercase tracking-widest bg-accent-50 rounded-full px-3 py-1 border border-amber-200">Transparent Pricing</span>
+                <h2 class="text-3xl font-extrabold text-brand-900 mt-3">Interactive Perc Test & Site Cost Estimator</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Calculate instant price quotes and field turnaround times based on your parcel characteristics.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md">
+                <!-- Estimator Inputs (7 cols) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-bold text-lg text-brand-900 border-b border-slate-200 pb-2">1. Property & Terrain Details</h3>
+
+                    <!-- Input 1: Service Type -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Service Required</label>
+                        <select id="estService" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                            <option value="standard_perc" selected>Standard Perc Test & Soil Evaluation ($650 - $950 base)</option>
+                            <option value="full_septic_design">Perc Test + Engineered Septic System Design ($1,400 - $2,200)</option>
+                            <option value="real_estate_inspection">Real Estate Septic Inspection & Soil Verification ($450 - $700)</option>
+                            <option value="repair_expansion">Repair / Expansion Site Evaluation ($600 - $900)</option>
+                        </select>
+                    </div>
+
+                    <!-- Input 2: Lot Size -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Lot / Parcel Size</label>
+                            <select id="estLotSize" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                                <option value="small" selected>Under 1 Acre</option>
+                                <option value="medium">1 Acre to 5 Acres (+$150)</option>
+                                <option value="large">5 Acres to 15 Acres (+$300)</option>
+                                <option value="commercial">15+ Acres / Multi-lot (Custom)</option>
+                            </select>
+                        </div>
+
+                        <!-- Input 3: Terrain Type -->
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Site Terrain & Density</label>
+                            <select id="estTerrain" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                                <option value="flat" selected>Clear / Flat Lawn Terrain</option>
+                                <option value="sloped">Moderate Slope / Light Brush (+$100)</option>
+                                <option value="heavily_wooded">Heavily Wooded / Steep Incline (+$250)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Input 4: Urgency Level -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Scheduling & Turnaround</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="cursor-pointer border rounded-xl p-3 flex items-center gap-3 bg-white border-slate-300 hover:border-brand-600 has-[:checked]:border-brand-700 has-[:checked]:bg-brand-50">
+                                <input type="radio" name="estUrgency" value="standard" checked class="text-brand-700 focus:ring-brand-700">
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Standard</p>
+                                    <p class="text-xs text-slate-500">5-7 Business Days</p>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer border rounded-xl p-3 flex items-center gap-3 bg-white border-slate-300 hover:border-brand-600 has-[:checked]:border-brand-700 has-[:checked]:bg-brand-50">
+                                <input type="radio" name="estUrgency" value="rush" class="text-brand-700 focus:ring-brand-700">
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Priority Rush</p>
+                                    <p class="text-xs text-amber-700 font-semibold">24-48 Hr Dispatch (+25%)</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estimator Output Panel (5 cols) -->
+                <div class="lg:col-span-5 bg-brand-900 text-white rounded-xl p-6 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <span class="text-amber-400 font-semibold text-xs uppercase tracking-wider">Estimate Breakdown</span>
+                        <h4 class="text-2xl font-bold mt-1 text-white">Projected Total</h4>
+
+                        <div class="my-6 border-y border-brand-700 py-6 text-center">
+                            <span class="text-xs text-slate-300 block mb-1">Estimated Cost Range</span>
+                            <p id="estPriceDisplay" class="text-4xl font-extrabold text-amber-400">$750 - $950</p>
+                            <p class="text-xs text-slate-300 mt-2">*Includes field labor, soak test, and official site map.</p>
+                        </div>
+
+                        <!-- Dynamics Summary List -->
+                        <div class="space-y-2.5 text-xs text-slate-200">
+                            <div class="flex justify-between">
+                                <span>Estimated Turnaround:</span>
+                                <span id="estTurnaroundDisplay" class="font-bold text-white">5-7 Business Days</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Excavator Digging Needed:</span>
+                                <span id="estDiggingDisplay" class="font-bold text-emerald-400">Standard Excavator</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>County Permit Ready:</span>
+                                <span class="font-bold text-emerald-400">Yes (Stamped Copy)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-brand-800">
+                        <button onclick="transferEstimateToBooking()" class="w-full accent-gradient hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                            <span>Lock In This Estimate & Book</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-50 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 rounded-full px-3 py-1">Comprehensive Soil Engineering</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-3">Our Specialized Perc & Septic Services</h2>
+                <p class="text-slate-600 mt-3 text-base">From raw land evaluations to official county engineering sign-offs, we ensure your building plans pass health regulations smooth and hassle-free.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">Soil Perc (Percolation) Testing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Measuring water absorption rates across multiple test holes to determine if your soil can safely process a septic drain field.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Standardized Water Presoak Phase</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Precise Drop Rate Log Sheet</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">Septic System Design & Engineering</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Custom engineered site layout plans for Conventional Gravity, Pressure Dosed, Mound, or ATU (Aerobic Treatment Unit) systems.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> CAD Site Map Generation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Stamped PE & RS Documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">Deep Profile Hole Evaluations</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Logging soil horizon strata, seasonal high water table indicators, redoximorphic features, and bedrock depth with backhoe excavation.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Soil Texture & Structure Analysis</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Limiting Layer Determination</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-house-circle-check"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">Real Estate Septic Inspections</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Essential for buyers and sellers. Detailed point-of-sale inspections and compliance certification for local health departments and lenders.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Tank Baffle & Sludge Testing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Drainfield Hydraulic Load Test</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">Repair & Expansion Site Testing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Failing drainfield? Adding home bedrooms? We test secondary reserve areas to design compliant replacement or expanded septic fields.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Reserve Drainfield Designation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Health Code Variances Assistance</li>
+                    </ul>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl p-7 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-xl font-bold mb-5 group-hover:bg-brand-900 group-hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-900 mb-2">County Permitting Navigation</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            We take the administrative burden off your hands by liaising directly with county environmental health officials from filing to final permit issue.
+                        </p>
+                    </div>
+                    <ul class="border-t border-slate-100 pt-4 space-y-2 text-xs font-semibold text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> Health Dept Application Prep</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-700"></i> On-site Health Officer Walkthroughs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 bg-white border-y border-slate-200 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-600 font-bold text-xs uppercase tracking-widest bg-accent-50 rounded-full px-3 py-1">Step-by-Step Guide</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-900 mt-3">How the Soil Perc Testing Process Works</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Click through the 4 phases of getting your property evaluated and county approved.</p>
+            </div>
+
+            <!-- Process Tabs / Interactive Steps -->
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <!-- Step Selector (Left 5 cols) -->
+                <div class="lg:col-span-5 space-y-3">
+                    <button onclick="switchStep(1)" id="stepBtn-1" class="step-btn w-full text-left p-4 rounded-xl border-2 border-brand-800 bg-brand-50 transition-all flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-900 text-white font-bold flex items-center justify-center flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm sm:text-base">1. Soil Map Review & Desk Study</h4>
+                            <p class="text-xs text-slate-600">Web soil survey & GIS topographical mapping</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchStep(2)" id="stepBtn-2" class="step-btn w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm sm:text-base">2. Field Digging & Pit Preparation</h4>
+                            <p class="text-xs text-slate-600">Deep profile pit & auger hole excavation</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchStep(3)" id="stepBtn-3" class="step-btn w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm sm:text-base">3. Water Soak & Rate Measurement</h4>
+                            <p class="text-xs text-slate-600">Standard presoak and drop rate timing</p>
+                        </div>
+                    </button>
+
+                    <button onclick="switchStep(4)" id="stepBtn-4" class="step-btn w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center flex-shrink-0">4</div>
+                        <div>
+                            <h4 class="font-bold text-brand-900 text-sm sm:text-base">4. Engineering Report & Permit Filing</h4>
+                            <p class="text-xs text-slate-600">Official health dept submission & design</p>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Step Content Card (Right 7 cols) -->
+                <div class="lg:col-span-7 bg-slate-900 text-white p-8 rounded-2xl shadow-xl min-h-[360px] flex flex-col justify-between border border-slate-800">
+                    <div id="stepContent">
+                        <div class="flex items-center gap-3 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Phase 1 of 4</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Initial Soil Map Review & Desktop Research</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Before placing a shovel in the ground, our licensed soil scientists cross-reference USDA soil conservation maps, county GIS contours, parcel setback requirements, and nearby well locations. This enables us to pinpoint the optimal target location for testing on your property, saving time and excavation costs.
+                        </p>
+                        <div class="bg-slate-800 rounded-xl p-4 border border-slate-700/60">
+                            <h5 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2"><i class="fa-solid fa-lightbulb mr-1.5"></i>What We Look For:</h5>
+                            <p class="text-xs text-slate-300">Property boundaries, steep slopes (>15%), proximity to lakes/streams, and required 100ft well setbacks.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
+                        <span>Middle Fork Quality Assurance</span>
+                        <a href="#booking" class="text-amber-400 font-bold hover:underline flex items-center gap-1">
+                            Schedule Your Step 1 Assessment <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-100 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 rounded-full px-3 py-1">Client Feedback</span>
+                <h2 class="text-3xl font-extrabold text-brand-900 mt-3">Trusted Across the Region</h2>
+                <p class="text-slate-600 text-sm mt-2">See what property owners, builders, and realtors say about working with Middle Fork Perc & Septic.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            "Middle Fork saved our land purchase! They conducted the perc test in 48 hours and submitted stamped drawings to the county health department ahead of schedule."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-3">
+                        <p class="font-bold text-sm text-brand-900">Mark & Sarah T.</p>
+                        <p class="text-xs text-slate-400">Homeowners & Land Buyers</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            "As a custom home builder, I rely on Middle Fork Perc & Septic for all our site evaluations. Accurate soil profile logs and zero county permit rejections."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-3">
+                        <p class="font-bold text-sm text-brand-900">David R.</p>
+                        <p class="text-xs text-slate-400">General Contractor</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs mb-3">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            "Extremely professional. Their interactive price calculator gave us an accurate quote and they explained every step of the deep pit evaluation."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 pt-3">
+                        <p class="font-bold text-sm text-brand-900">Elena M.</p>
+                        <p class="text-xs text-slate-400">Rural Real Estate Agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-brand-50 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200">
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-brand-800 font-bold text-xs uppercase tracking-widest bg-brand-100 rounded-full px-3 py-1">Fast Scheduling</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-900 mt-2">Request Your Site Evaluation or Free Estimate</h2>
+                    <p class="text-slate-600 text-sm mt-1">Fill in your parcel details below and our soil engineers will confirm your appointment time within 2 business hours.</p>
+                </div>
+
+                <form id="bookingForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <!-- Name & Phone -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
+                            <input type="text" required placeholder="John Doe" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Phone Number *</label>
+                            <input type="tel" required placeholder="(555) 000-0000" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Email & Service -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Email Address *</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Primary Service Needed *</label>
+                            <select id="bookingService" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                                <option value="Perc Testing Only">Soil Perc Testing</option>
+                                <option value="Full Perc + Septic Design">Perc Testing + Septic Design Plan</option>
+                                <option value="Real Estate Inspection">Real Estate Compliance Inspection</option>
+                                <option value="Repair Evaluation">Repair / Replacement Field Evaluation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Property Address / Parcel ID -->
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Property Street Address or Location Description *</label>
+                            <input type="text" required placeholder="1234 Timberland Rd, or Lot 14 Oak Ridge Subdivision" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Parcel ID # (Optional)</label>
+                            <input type="text" placeholder="e.g. 045-12-890" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Preferred Date & Notes -->
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Preferred Field Date</label>
+                            <input type="date" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Additional Site Details (Gates, Utilities, Timelines)</label>
+                            <input type="text" placeholder="e.g. Locked gate code 1234, heavy pine trees" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Selected Estimate Summary Badge inside form -->
+                    <div id="bookingEstBadge" class="bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-center justify-between text-xs text-amber-900 hidden">
+                        <span><i class="fa-solid fa-calculator text-amber-600 mr-2"></i>Attached Estimate: <strong id="bookingEstPrice">$750 - $950</strong></span>
+                        <span class="text-[10px] bg-amber-200 font-bold px-2 py-0.5 rounded">Locked In</span>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-900 hover:bg-brand-800 text-white font-extrabold text-base py-4 rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-amber-400"></i>
+                        <span>Submit Booking & Get Confirmed</span>
+                    </button>
+
+                    <p class="text-center text-xs text-slate-500">
+                        <i class="fa-solid fa-lock mr-1"></i> Your information is confidential and used solely for county permit research.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 text-center shadow-2xl border border-slate-200 animate-fade-in">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold mb-4">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-900 mb-2">Request Received!</h3>
+            <p class="text-slate-600 text-sm mb-6">
+                Thank you. A Middle Fork Soil Scientist is reviewing your parcel coordinates and GIS map data. We will call you within 2 business hours to finalize field dispatch.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-4 text-left text-xs space-y-2 mb-6 border border-slate-200">
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Status:</span>
+                    <span class="font-bold text-emerald-700">GIS Pre-Check In Progress</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500">Expected Call:</span>
+                    <span class="font-bold text-slate-800">Within 2 Hours</span>
+                </div>
+            </div>
+            <button onclick="closeModal()" class="w-full bg-brand-900 hover:bg-brand-800 text-white font-bold py-3 rounded-xl transition">
+                Return to Website
+            </button>
+        </div>
+    </div>
+
+    <section id="faq" class="py-20 bg-white border-t border-slate-200 scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 rounded-full px-3 py-1">Common Questions</span>
+                <h2 class="text-3xl font-extrabold text-brand-900 mt-3">Frequently Asked Questions</h2>
+                <p class="text-slate-600 text-sm mt-2">Everything you need to know about soil percolation, septic permits, and county standards.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-brand-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>What exactly is a Perc (Percolation) Test?</span>
+                        <i id="faqIcon-1" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAns-1" class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        A percolation test measures the rate at which water absorbs into the soil on your property. It tests whether the soil can effectively filter wastewater effluent from a septic tank without backing up or contaminating local groundwater.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-brand-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>What happens if my property fails a perc test?</span>
+                        <i id="faqIcon-2" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAns-2" class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        A slow or failed initial perc test does not automatically mean you cannot build! Modern engineered septic systems—such as Sand Mound, Aerobic Treatment Units (ATU), or Drip Irrigation systems—can be installed on sites with clay soil or high water tables where standard gravity systems fail.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-brand-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>How long does a perc test take from start to finish?</span>
+                        <i id="faqIcon-3" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAns-3" class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        On-site testing generally takes between 4 to 8 hours (including soil presoak requirements mandated by health regulations). Stamped engineering reports and county paperwork are compiled and sent to you or the health department within 2 to 5 business days.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-brand-900 flex justify-between items-center hover:bg-slate-50">
+                        <span>Do I need an excavator or backhoe present?</span>
+                        <i id="faqIcon-4" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAns-4" class="hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Most counties require a "Deep Hole Profile Pit" (typically 6-8 feet deep) alongside the shallow perc holes. We can arrange heavy equipment operators as part of your service package, or work directly with your site excavation crew.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Details (5 cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Middle Fork Perc & Septic Headquarters</h2>
+                    <p class="text-slate-400 text-sm">
+                        Serving residential homeowners, land developers, realtors, and commercial builders across regional counties.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-bold">Dispatch Hotline</h4>
+                                <a href="tel:5550192834" class="text-lg font-bold hover:text-amber-400 transition">(555) 019-2834</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-bold">Email Direct</h4>
+                                <a href="mailto:reports@middleforkperc.com" class="text-sm font-bold hover:text-amber-400 transition">reports@middleforkperc.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-bold">Email Direct</h4>
+                                <a href="mailto:info@apexperc.com" class="text-sm font-bold hover:text-amber-400 transition">reports@apexperc.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-bold">Main Field Office</h4>
+                                <p class="text-sm text-slate-300">100 Environmental Way, Suite 200, Regional County</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Operating Hours -->
+                    <div class="bg-slate-800/80 rounded-2xl p-5 border border-slate-700/60 mt-6">
+                        <h4 class="font-bold text-sm text-amber-400 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-clock"></i> Field Hours & Dispatch
+                        </h4>
+                        <div class="space-y-1 text-xs text-slate-300">
+                            <div class="flex justify-between">
+                                <span>Monday - Friday:</span>
+                                <span>7:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Saturday:</span>
+                                <span>8:00 AM - 2:00 PM (Emergency testing)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sunday:</span>
+                                <span>Closed (Field prep)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Service Counties Map Display (7 cols) -->
+                <div class="lg:col-span-7 bg-slate-800 rounded-2xl p-6 border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Primary County Service Areas</h3>
+                        <p class="text-xs text-slate-400 mb-6">Fully certified and registered with Health Departments in the following jurisdictions:</p>
+
+                        <!-- County Badges -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Northern County</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Central Metro</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Eastern Hills</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Southern Pines</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Western Valley</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                            <div class="bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-center">
+                                <i class="fa-solid fa-map-pin text-amber-400 text-xs mb-1 block"></i>
+                                <span class="font-bold text-sm block text-white">Lakeside District</span>
+                                <span class="text-[10px] text-emerald-400 font-semibold">Fast Dispatch</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Map Box Placeholder -->
+                        <div class="w-full h-48 bg-slate-900 rounded-xl border border-slate-700 flex flex-col items-center justify-center relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:12px_12px] opacity-40"></div>
+                            <i class="fa-solid fa-earth-americas text-4xl text-brand-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <p class="text-sm font-bold text-slate-200">Interactive Regional Coverage Map</p>
+                            <p class="text-xs text-slate-500">Radius of 75 miles from main field office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                <!-- Col 1: Brand -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-brand-900 text-amber-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white">MIDDLE FORK</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed">
+                        Middle Fork Perc & Septic Solutions. Licensed Environmental Health Specialists & Septic System Designers. Stamped soil evaluations and civil plans.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h5 class="font-bold text-white uppercase tracking-wider mb-3">Quick Navigation</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-amber-400 transition">Services Overview</a></li>
+                        <li><a href="#estimator" class="hover:text-amber-400 transition">Cost Estimator Tool</a></li>
+                        <li><a href="#process" class="hover:text-amber-400 transition">Perc Testing Process</a></li>
+                        <li><a href="#testimonials" class="hover:text-amber-400 transition">Client Reviews</a></li>
+                        <li><a href="#booking" class="hover:text-amber-400 transition">Schedule Site Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h5 class="font-bold text-white uppercase tracking-wider mb-3">Core Offerings</h5>
+                    <ul class="space-y-2">
+                        <li><span>Soil Percolation Rates</span></li>
+                        <li><span>Deep Hole Soil Profiles</span></li>
+                        <li><span>Septic System Cad Engineering</span></li>
+                        <li><span>Real Estate Escrow Certs</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Licensing -->
+                <div>
+                    <h5 class="font-bold text-white uppercase tracking-wider mb-3">Licensing & Compliance</h5>
+                    <p class="text-slate-400 mb-2">State Certified Soil Scientist #SS-89021</p>
+                    <p class="text-slate-400 mb-2">Registered Onsite Wastewater Evaluator #ROW-4412</p>
+                    <p class="text-slate-400">Fully Insured & Bonded</p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+                <p>&copy; <span id="year">2026</span> Middle Fork Perc & Septic Solutions. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">County Filing Guidelines</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Setup Cost Estimator Listeners
+            const inputs = ['estService', 'estLotSize', 'estTerrain'];
+            inputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.addEventListener('change', calculateEstimate);
+            });
+
+            const urgencyInputs = document.querySelectorAll('input[name="estUrgency"]');
+            urgencyInputs.forEach(radio => radio.addEventListener('change', calculateEstimate));
+
+            // Initial calculation call
+            calculateEstimate();
+
+            // Mobile menu toggle logic
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        function calculateEstimate() {
+            const service = document.getElementById('estService').value;
+            const lot = document.getElementById('estLotSize').value;
+            const terrain = document.getElementById('estTerrain').value;
+            const urgency = document.querySelector('input[name="estUrgency"]:checked')?.value || 'standard';
+
+            let baseMin = 650;
+            let baseMax = 950;
+            let turnaround = "5-7 Business Days";
+            let digNote = "Standard Backhoe / Excavator";
+
+            // Service Pricing
+            if (service === 'full_septic_design') {
+                baseMin = 1400; baseMax = 2200;
+                turnaround = "7-10 Business Days";
+            } else if (service === 'real_estate_inspection') {
+                baseMin = 450; baseMax = 700;
+                turnaround = "2-4 Business Days";
+            } else if (service === 'repair_expansion') {
+                baseMin = 600; baseMax = 900;
+                turnaround = "5-7 Business Days";
+            }
+
+            // Lot Size additions
+            if (lot === 'medium') { baseMin += 150; baseMax += 150; }
+            else if (lot === 'large') { baseMin += 300; baseMax += 300; }
+            else if (lot === 'commercial') { baseMin += 600; baseMax += 900; }
+
+            // Terrain additions
+            if (terrain === 'sloped') { baseMin += 100; baseMax += 100; }
+            else if (terrain === 'heavily_wooded') { 
+                baseMin += 250; baseMax += 250; 
+                digNote = "Compact Tracked Mini-Excavator Needed";
+            }
+
+            // Urgency
+            if (urgency === 'rush') {
+                baseMin = Math.round(baseMin * 1.25);
+                baseMax = Math.round(baseMax * 1.25);
+                turnaround = "24-48 Hours Emergency Dispatch";
+            }
+
+            // Update UI
+            document.getElementById('estPriceDisplay').textContent = `$${baseMin} - $${baseMax}`;
+            document.getElementById('estTurnaroundDisplay').textContent = turnaround;
+            document.getElementById('estDiggingDisplay').textContent = digNote;
+        }
+
+        function transferEstimateToBooking() {
+            const price = document.getElementById('estPriceDisplay').textContent;
+            const badge = document.getElementById('bookingEstBadge');
+            const priceText = document.getElementById('bookingEstPrice');
+
+            if (badge && priceText) {
+                priceText.textContent = price;
+                badge.classList.remove('hidden');
+            }
+
+            // Scroll to booking section
+            const bookingSec = document.getElementById('booking');
+            if (bookingSec) {
+                bookingSec.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        const stepsData = {
+            1: {
+                phase: "Phase 1 of 4",
+                title: "Initial Soil Map Review & Desktop Research",
+                desc: "Before placing a shovel in the ground, our licensed soil scientists cross-reference USDA soil conservation maps, county GIS contours, parcel setback requirements, and nearby well locations. This enables us to pinpoint the optimal target location for testing on your property, saving time and excavation costs.",
+                note: "Property boundaries, steep slopes (>15%), proximity to lakes/streams, and required 100ft well setbacks."
+            },
+            2: {
+                phase: "Phase 2 of 4",
+                title: "Field Digging & Deep Profile Pit Preparation",
+                desc: "Our team arrives on-site with augers or excavators to dig standardized percolation test holes (typically 24-36 inches deep) along with a deep soil profile pit (6-8 feet deep). We carefully document soil texture, clay horizons, gravel content, and signs of seasonal high water tables.",
+                note: "Soil color mottling (redoximorphic features) indicates seasonal water table limits."
+            },
+            3: {
+                phase: "Phase 3 of 4",
+                title: "Water Presoak & Rate Measurement",
+                desc: "Perc test holes are filled with water and allowed to soak for a prescribed period to saturate the soil—simulating real-world septic conditions. We then measure the drop in water level over strict timed intervals (minutes per inch drop) using calibrated depth gauges.",
+                note: "Fast soils absorb >1 inch in 10 mins; slower clay soils may take 30-60 mins per inch."
+            },
+            4: {
+                phase: "Phase 4 of 4",
+                title: "Stamped Engineering Report & Permit Filing",
+                desc: "We compile the soil absorption rates, profile logs, and site topographical sketches into a formal stamped report. This report is submitted directly to your local County Environmental Health Department for septic permit issuance.",
+                note: "Official PE/RS stamp attached for immediate building permit approval."
+            }
+        };
+
+        function switchStep(stepNum) {
+            // Update button styles
+            for (let i = 1; i <= 4; i++) {
+                const btn = document.getElementById(`stepBtn-${i}`);
+                if (i === stepNum) {
+                    btn.className = "step-btn w-full text-left p-4 rounded-xl border-2 border-brand-800 bg-brand-50 transition-all flex items-center gap-4";
+                    btn.querySelector('div').className = "w-10 h-10 rounded-full bg-brand-900 text-white font-bold flex items-center justify-center flex-shrink-0";
+                } else {
+                    btn.className = "step-btn w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center gap-4";
+                    btn.querySelector('div').className = "w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center flex-shrink-0";
+                }
+            }
+
+            // Update content card
+            const data = stepsData[stepNum];
+            const contentDiv = document.getElementById('stepContent');
+            contentDiv.innerHTML = `
+                <div class="flex items-center gap-3 text-amber-400 font-bold text-xs uppercase tracking-widest mb-3">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>${data.phase}</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-white">${data.title}</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">${data.desc}</p>
+                <div class="bg-slate-800 rounded-xl p-4 border border-slate-700/60">
+                    <h5 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2"><i class="fa-solid fa-lightbulb mr-1.5"></i>Key Evaluation Metric:</h5>
+                    <p class="text-xs text-slate-300">${data.note}</p>
+                </div>
+            `;
+        }
+
+        function toggleFaq(num) {
+            const ans = document.getElementById(`faqAns-${num}`);
+            const icon = document.getElementById(`faqIcon-${num}`);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                ans.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const modal = document.getElementById('confirmModal');
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('confirmModal');
+            if (modal) modal.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
